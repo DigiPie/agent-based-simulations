@@ -558,7 +558,7 @@
 				</EmbeddedObjectPresentation>
 				<Text>
 					<Id>1551609202901</Id>
-					<Name><![CDATA[Singapore]]></Name>
+					<Name><![CDATA[Title]]></Name>
 					<X>20</X><Y>510</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -690,7 +690,7 @@
 				</Text>
 				<Text>
 					<Id>1551610135679</Id>
-					<Name><![CDATA[Singapore1]]></Name>
+					<Name><![CDATA[Description]]></Name>
 					<X>20</X><Y>550</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
@@ -702,8 +702,8 @@
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
 					<Color>-16777216</Color>
-					<Text><![CDATA[Humans and Elves only stop moving when at least 3 neighbours are the same race.
-Orcs and Dwarves only stop moving when at least 2 neighbours are the same race.]]></Text>
+					<Text><![CDATA[Humans and Elves only stop moving when at least 3 neighbours are of the same race.
+Orcs and Dwarves only stop moving when at least 2 neighbours are of the same race.]]></Text>
 					<Font>
 						<Name>open sans</Name>
 						<Size>16</Size>
