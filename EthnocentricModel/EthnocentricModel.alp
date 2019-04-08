@@ -196,7 +196,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0.12]]></Code>
+							<Code><![CDATA[0.4]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -314,7 +314,7 @@ for (Object object : objects) {
 			
 			// Roll a dice to decide whether to produce mutated offspring
 			if (Math.random() < mutateRate) {
-				mutate();
+				addMutatedOffspring();
 			} else {
 			// If no mutation, reproduce with offspring having same
 			// race and strategy
@@ -641,16 +641,12 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					<ReturnModificator>VOID</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554742480232</Id>
-					<Name><![CDATA[mutate]]></Name>
+					<Name><![CDATA[addMutatedOffspring]]></Name>
 					<X>400</X><Y>900</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
-					<Parameter>
-						<Name><![CDATA[race]]></Name>
-						<Type><![CDATA[int]]></Type>
-					</Parameter>
 					<Body><![CDATA[int strategyChoice = (int)(Math.random() * 4);
 int raceChoice = (int)(Math.random() * 4);
 switch (strategyChoice) {
