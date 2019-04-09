@@ -95,7 +95,7 @@
 			<ScaleRuler>
 				<Id>1554100610554</Id>
 				<Name><![CDATA[scale]]></Name>
-				<X>0</X><Y>-150</Y>
+				<X>50</X><Y>-360</Y>
 				<PublicFlag>false</PublicFlag>
 				<PresentationFlag>false</PresentationFlag>
 				<ShowLabel>false</ShowLabel>
@@ -113,7 +113,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554739040361</Id>
 					<Name><![CDATA[deathRate]]></Name>
-					<X>560</X><Y>500</Y>
+					<X>510</X><Y>650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -128,7 +128,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554739268268</Id>
 					<Name><![CDATA[ethnoRatio]]></Name>
-					<X>560</X><Y>700</Y>
+					<X>640</X><Y>80</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -143,7 +143,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554739729939</Id>
 					<Name><![CDATA[humanRatio]]></Name>
-					<X>560</X><Y>740</Y>
+					<X>640</X><Y>120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -158,7 +158,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554739737418</Id>
 					<Name><![CDATA[traitorousRatio]]></Name>
-					<X>560</X><Y>780</Y>
+					<X>640</X><Y>160</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -173,7 +173,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554739747813</Id>
 					<Name><![CDATA[selfishRatio]]></Name>
-					<X>560</X><Y>820</Y>
+					<X>640</X><Y>200</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -188,7 +188,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554740072673</Id>
 					<Name><![CDATA[reproductionRate]]></Name>
-					<X>560</X><Y>540</Y>
+					<X>510</X><Y>610</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -196,14 +196,14 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0.4]]></Code>
+							<Code><![CDATA[0.12]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
 					<Id>1554741940529</Id>
 					<Name><![CDATA[maxSpace]]></Name>
-					<X>560</X><Y>460</Y>
+					<X>510</X><Y>570</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -215,7 +215,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554742612296</Id>
 					<Name><![CDATA[mutateRate]]></Name>
-					<X>560</X><Y>580</Y>
+					<X>510</X><Y>690</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -227,12 +227,87 @@
 						</InitialValue>
 					</Properties>
 				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1554792978079</Id>
+					<Name><![CDATA[cooperateCooperate]]></Name>
+					<X>750</X><Y>940</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.02]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1554793023830</Id>
+					<Name><![CDATA[defectCooperate]]></Name>
+					<X>750</X><Y>980</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.03]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1554793061962</Id>
+					<Name><![CDATA[cooperateDefect]]></Name>
+					<X>750</X><Y>1020</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[-0.01]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1554793061970</Id>
+					<Name><![CDATA[defectDefect]]></Name>
+					<X>750</X><Y>1060</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1554800980994</Id>
+					<Name><![CDATA[initialCount]]></Name>
+					<X>50</X><Y>-300</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[int]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[15]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
 			</Variables>
 			<StatechartElements>
 				<StatechartElement Class="State" ParentState="ROOT_NODE">
 					<Id>1554738605876</Id>
 					<Name><![CDATA[state]]></Name>
-					<X>100</X><Y>500</Y>
+					<X>50</X><Y>500</Y>
 					<Label><X>10</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -244,7 +319,7 @@
 				<StatechartElement Class="State" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738651630</Id>
 					<Name><![CDATA[immigration]]></Name>
-					<X>200</X><Y>550</Y>
+					<X>150</X><Y>550</Y>
 					<Label><X>45</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -265,16 +340,24 @@ for (Agent agent: agents()) {
 				<StatechartElement Class="State" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738697251</Id>
 					<Name><![CDATA[interaction]]></Name>
-					<X>200</X><Y>620</Y>
+					<X>150</X><Y>620</Y>
 					<Label><X>55</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="200" Height="30">
-						<EntryAction><![CDATA[// Set all humans to have base reproduction rate
-for (Agent agent: agents()) {
+						<EntryAction><![CDATA[for (Agent agent: agents()) {
 	Human human = (Human)agent;
+	// Set human to have base reproduction rate
 	human.reproductionPoints = reproductionRate;
+	
+	// This human to interact with all neighbours
+	if (human.getNeighbors() != null) {
+		for (Agent neighbour : human.getNeighbors()) {
+			Human otherHuman = (Human)neighbour;
+			interact(human, otherHuman);
+		}
+	}
 }
 
 // To do interactions]]></EntryAction>
@@ -284,7 +367,7 @@ for (Agent agent: agents()) {
 				<StatechartElement Class="State" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738711217</Id>
 					<Name><![CDATA[reproduction]]></Name>
-					<X>200</X><Y>700</Y>
+					<X>150</X><Y>700</Y>
 					<Label><X>45</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -319,16 +402,16 @@ for (Object object : objects) {
 			// If no mutation, reproduce with offspring having same
 			// race and strategy
 				switch (human.strategy) {
-					case 1:
+					case Selfish:
 						addSelfish(human.race);
 						break;
-					case 2:
+					case Traitor:
 						addTraitorous(human.race);
 						break;
-					case 3:
+					case Humanitarian:
 						addHumanitarian(human.race);
 						break;
-					case 4:
+					case Ethnocentric:
 					default:
 						addEthnocentric(human.race);
 				}
@@ -342,7 +425,7 @@ for (Object object : objects) {
 				<StatechartElement Class="State" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738728114</Id>
 					<Name><![CDATA[death]]></Name>
-					<X>200</X><Y>770</Y>
+					<X>150</X><Y>770</Y>
 					<Label><X>75</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -365,7 +448,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 				<StatechartElement Class="EntryPoint" ParentState="ROOT_NODE">
 					<Id>1554738609646</Id>
 					<Name><![CDATA[statechart]]></Name>
-					<X>300</X><Y>460</Y>
+					<X>250</X><Y>460</Y>
 					<Label><X>10</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -381,7 +464,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 				<StatechartElement Class="InitialStatePointer" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738649227</Id>
 					<Name><![CDATA[initialState]]></Name>
-					<X>300</X><Y>520</Y>
+					<X>250</X><Y>520</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -396,7 +479,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 				<StatechartElement Class="Transition" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738755318</Id>
 					<Name><![CDATA[oneCycle]]></Name>
-					<X>400</X><Y>780</Y>
+					<X>350</X><Y>780</Y>
 					<Label><X>10</X><Y>30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -428,7 +511,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 				<StatechartElement Class="Transition" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738801145</Id>
 					<Name><![CDATA[transition]]></Name>
-					<X>300</X><Y>580</Y>
+					<X>250</X><Y>580</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -458,7 +541,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 				<StatechartElement Class="Transition" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738810968</Id>
 					<Name><![CDATA[transition1]]></Name>
-					<X>300</X><Y>650</Y>
+					<X>250</X><Y>650</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -488,7 +571,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 				<StatechartElement Class="Transition" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738818671</Id>
 					<Name><![CDATA[transition2]]></Name>
-					<X>300</X><Y>730</Y>
+					<X>250</X><Y>730</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -522,26 +605,26 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554741493149</Id>
 					<Name><![CDATA[addSelfish]]></Name>
-					<X>200</X><Y>900</Y>
+					<X>50</X><Y>940</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Parameter>
 						<Name><![CDATA[race]]></Name>
-						<Type><![CDATA[int]]></Type>
+						<Type><![CDATA[Human.Race]]></Type>
 					</Parameter>
 					<Body><![CDATA[switch (race) {
-	case 1:
+	case Red:
 		add_selfishRed();
 		break;
-	case 2:
+	case Green:
 		add_selfishGreen();
 		break;
-	case 3:
+	case Blue:
 		add_selfishBlue();
 		break;
-	case 4:
+	case Orange:
 	default:
 		add_selfishOrange();
 		break;
@@ -552,26 +635,26 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554741593193</Id>
 					<Name><![CDATA[addTraitorous]]></Name>
-					<X>200</X><Y>940</Y>
+					<X>50</X><Y>980</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Parameter>
 						<Name><![CDATA[race]]></Name>
-						<Type><![CDATA[int]]></Type>
+						<Type><![CDATA[Human.Race]]></Type>
 					</Parameter>
 					<Body><![CDATA[switch (race) {
-	case 1:
+	case Red:
 		add_traitorousRed();
 		break;
-	case 2:
+	case Green:
 		add_traitorousGreen();
 		break;
-	case 3:
+	case Blue:
 		add_traitorousBlue();
 		break;
-	case 4:
+	case Orange:
 	default:
 		add_traitorousOrange();
 		break;
@@ -582,26 +665,26 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554741622804</Id>
 					<Name><![CDATA[addHumanitarian]]></Name>
-					<X>200</X><Y>980</Y>
+					<X>50</X><Y>1020</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Parameter>
 						<Name><![CDATA[race]]></Name>
-						<Type><![CDATA[int]]></Type>
+						<Type><![CDATA[Human.Race]]></Type>
 					</Parameter>
 					<Body><![CDATA[switch (race) {
-	case 1:
+	case Red:
 		add_humanRed();
 		break;
-	case 2:
+	case Green:
 		add_humanGreen();
 		break;
-	case 3:
+	case Blue:
 		add_humanBlue();
 		break;
-	case 4:
+	case Orange:
 	default:
 		add_humanOrange();
 		break;
@@ -612,26 +695,26 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554741644624</Id>
 					<Name><![CDATA[addEthnocentric]]></Name>
-					<X>200</X><Y>1020</Y>
+					<X>50</X><Y>1060</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Parameter>
 						<Name><![CDATA[race]]></Name>
-						<Type><![CDATA[int]]></Type>
+						<Type><![CDATA[Human.Race]]></Type>
 					</Parameter>
 					<Body><![CDATA[switch (race) {
-	case 1:
+	case Red:
 		add_ethnoRed();
 		break;
-	case 2:
+	case Green:
 		add_ethnoGreen();
 		break;
-	case 3:
+	case Blue:
 		add_ethnoBlue();
 		break;
-	case 4:
+	case Orange:
 	default:
 		add_ethnoOrange();
 		break;
@@ -642,13 +725,14 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554742480232</Id>
 					<Name><![CDATA[addMutatedOffspring]]></Name>
-					<X>400</X><Y>900</Y>
+					<X>50</X><Y>900</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[int strategyChoice = (int)(Math.random() * 4);
-int raceChoice = (int)(Math.random() * 4);
+Human.Race raceChoice =
+	Human.Race.values()[(int)(Math.random() * 4)];
 switch (strategyChoice) {
 	case 1:
 		addSelfish(raceChoice);
@@ -665,12 +749,376 @@ switch (strategyChoice) {
 		break;
 }]]></Body>
 				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1554791183267</Id>
+					<Name><![CDATA[interact]]></Name>
+					<X>300</X><Y>900</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[human]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[otherHuman]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Body><![CDATA[switch (human.strategy) {
+	case Selfish: // human is selfish
+		interactAsSelfish(human, otherHuman);
+		break;
+	case Traitor: // human is traitor
+		interactAsTraitor(human, otherHuman);
+		break;
+	case Ethnocentric: // human is ethnocentric
+		interactAsEthnocentric(human, otherHuman);
+		break;
+	case Humanitarian:
+	default: // human is humanitarian
+		interactAsHumanitarian(human, otherHuman);
+		break;
+}]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1554794371659</Id>
+					<Name><![CDATA[interactAsSelfish]]></Name>
+					<X>300</X><Y>940</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[human]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[otherHuman]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Body><![CDATA[// human is selfish
+switch (otherHuman.strategy) {
+	case Selfish: // selfish & selfish
+		// selfish always defects
+		bothDefect(human, otherHuman);
+		break;
+	case Traitor: // selfish & traitor
+		if (human.race == otherHuman.race) {
+			// if same race, both defect
+			// selfish always defects
+			// traitor defects against same race
+			bothDefect(human, otherHuman);
+		} else {
+			// if different race, one defects
+			// selfish always defects
+			// traitor cooperates with different race
+			oneDefect(human, otherHuman); // human defects, other cooperates
+		}
+		break;
+	case Humanitarian: // selfish & humanitarian
+		// selfish always defects
+		// humanitarian always cooperates
+		oneDefect(human, otherHuman);
+		break;
+	case Ethnocentric:
+	default: // selfish & ethnocentric
+		if (human.race == otherHuman.race) {
+			// if same race, one defects
+			// selfish always defects
+			// ethnocentric cooperates with same race
+			oneDefect(human, otherHuman);
+		} else {
+			// if different race, both defect
+			// selfish always defects
+			// ethnocentric defects against different race
+			bothDefect(human, otherHuman);	
+		}
+		break;
+}]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1554794592014</Id>
+					<Name><![CDATA[bothDefect]]></Name>
+					<X>550</X><Y>940</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[human]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[otherHuman]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Body><![CDATA[// both human and otherHuman gain nothing
+// defectDefect is 0 by default
+human.reproductionPoints += defectDefect;
+//otherHuman.reproductionPoints += defectDefect;]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1554794759101</Id>
+					<Name><![CDATA[oneDefect]]></Name>
+					<X>550</X><Y>980</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[human]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[otherHuman]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Body><![CDATA[// human defects
+// otherHuman cooperates
+human.reproductionPoints += defectCooperate;
+//otherHuman.reproductionPoints += cooperateDefect;]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1554795346117</Id>
+					<Name><![CDATA[interactAsTraitor]]></Name>
+					<X>300</X><Y>980</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[human]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[otherHuman]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Body><![CDATA[// human is traitor
+switch (otherHuman.strategy) {
+	case Selfish: // traitor & selfish
+		if (human.race == otherHuman.race) {
+			// if same race, both defect
+			// traitor defects against same race
+			// selfish always defects
+			bothDefect(human, otherHuman);
+		} else {
+			// if different race, one defects
+			// traitor cooperates with different race
+			// selfish always defects
+			oneDefect(otherHuman, human); // otherHuman defects, human cooperates
+		}
+		break;
+	case Traitor: // traitor & traitor
+		if (human.race == otherHuman.race) {
+			// if same race, both defects	
+			// traitor defects against same race
+			bothDefect(human, otherHuman);
+		} else {
+			// if different race, both cooperate	
+			// traitor cooperates with different race
+			bothCooperate(human, otherHuman);
+		}
+		break;
+	case Humanitarian: // traitor & humanitarian
+		if (human.race == otherHuman.race) {
+			// if same race, one defects
+			// traitor defects against same race
+			// humanitarian always cooperate
+			oneDefect(human, otherHuman);
+		} else {
+			// if different race, both cooperate
+			// traitor cooperates with different race
+			// humanitarian always cooperates
+			bothCooperate(human, otherHuman);
+		}
+		break;
+	case Ethnocentric:
+	default: // traitor & ethnocentric
+		if (human.race == otherHuman.race) {
+			// if same race, one defects
+			// traitor defects against same race
+			// ethnocentric cooperates with same race
+			oneDefect(human, otherHuman);
+		} else {
+			// if different race, one defects
+			// traitor cooperates with different race
+			// ethnocentric defects against different race
+			oneDefect(otherHuman, human);
+		}
+		break;
+}]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1554795711253</Id>
+					<Name><![CDATA[bothCooperate]]></Name>
+					<X>550</X><Y>1020</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[human]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[otherHuman]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Body><![CDATA[// both human and otherHuman gain
+human.reproductionPoints += cooperateCooperate;
+//otherHuman.reproductionPoints += cooperateCooperate;]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1554796027188</Id>
+					<Name><![CDATA[interactAsHumanitarian]]></Name>
+					<X>300</X><Y>1020</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[human]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[otherHuman]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Body><![CDATA[// human is humanitarian
+switch (otherHuman.strategy) {
+	case Selfish: // humanitarian & selfish
+		// humanitarian always cooperates
+		// selfish always defects
+		oneDefect(otherHuman, human); // otherHuman defects, human cooperates
+		break;
+	case Traitor: // humanitarian & traitor
+		if (human.race == otherHuman.race) {
+			// if same race, one defects
+			// humanitarian always cooperates
+			// traitor defects against same race
+			oneDefect(otherHuman, human);
+		} else {
+			// if different race, both cooperate
+			// humanitarian always cooperates
+			// traitor cooperates with different race
+			bothCooperate(human, otherHuman);
+		}
+		break;
+	case Humanitarian: // humanitarian & humanitarian
+		// humanitarian always cooperates
+		bothCooperate(human, otherHuman);
+		break;
+	case Ethnocentric:
+	default: // humanitarian & ethnocentric
+		if (human.race == otherHuman.race) {
+			// if same race, both cooperates
+			// humanitarian always cooperates
+			// ethnocentric cooperates with same race
+			bothCooperate(human, otherHuman);
+		} else {
+			// if different race, one defects
+			// humanitarian always cooperates
+			// ethnocentric defects against different race
+			oneDefect(otherHuman, human);
+		}
+		break;
+}]]></Body>
+				</Function>
+				<Function AccessType="default" StaticFunction="false">
+					<ReturnModificator>VOID</ReturnModificator>
+					<ReturnType><![CDATA[double]]></ReturnType>
+					<Id>1554796402673</Id>
+					<Name><![CDATA[interactAsEthnocentric]]></Name>
+					<X>300</X><Y>1060</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Parameter>
+						<Name><![CDATA[human]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Parameter>
+						<Name><![CDATA[otherHuman]]></Name>
+						<Type><![CDATA[Human]]></Type>
+					</Parameter>
+					<Body><![CDATA[// human is ethnocentric
+switch (otherHuman.strategy) {
+	case Selfish: // ethnocentric & selfish
+		if (human.race == otherHuman.race) {
+			// if same race, one defects
+			// ethnocentric cooperates with same race
+			// selfish always defects
+			oneDefect(otherHuman, human); // otherHuman defects, human cooperates
+		} else {
+			// if different race, both defects
+			// ethnocentric defects against different race
+			// selfish always defects
+			bothDefect(human, otherHuman);
+		}
+		break;
+	case Traitor: // ethnocentric & traitor
+		if (human.race == otherHuman.race) {
+			// if same race, one defects
+			// ethnocentric cooperates with same race
+			// traitor defects against same race
+			oneDefect(otherHuman, human);
+		} else {
+			// if different race, one defects
+			// ethnocentric defects against different race
+			// traitor cooperates with different race
+			oneDefect(human, otherHuman);
+		}
+		break;
+	case Humanitarian: // ethnocentric & humanitarian
+		if (human.race == otherHuman.race) {
+			// if same race, both cooperates
+			// ethnocentric cooperates with same race
+			// humanitarian always cooperates
+			bothCooperate(human, otherHuman);
+		} else {
+			// if different race, one defects
+			// ethnocentric defects against different race
+			// humanitarian always cooperates
+			oneDefect(human, otherHuman);
+		}
+		break;
+	case Ethnocentric:
+	default: // ethnocentric & ethnocentric
+		if (human.race == otherHuman.race) {
+			// if same race, both cooperates
+			// ethnocentric cooperates with same race
+			bothCooperate(human, otherHuman);
+		} else {
+			// if different race, both defects
+			// ethnocentric defects against different race
+			bothDefect(human, otherHuman);
+		}
+		break;
+}]]></Body>
+				</Function>
 			</Functions>
 			<AgentLinks>
 				<AgentLink>
 					<Id>1554100610553</Id>
 					<Name><![CDATA[connections]]></Name>
-					<X>20</X><Y>-200</Y>
+					<X>240</X><Y>-360</Y>
 					<Label><X>15</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -697,7 +1145,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>0</Id>
 					<Name><![CDATA[selfishRed]]></Name>
-					<X>210</X><Y>-270</Y>
+					<X>50</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -718,19 +1166,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[Human.Race.Red]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[Human.Strategy.Selfish]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -777,7 +1225,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554102549990</Id>
 					<Name><![CDATA[selfishGreen]]></Name>
-					<X>370</X><Y>-270</Y>
+					<X>210</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -798,19 +1246,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[2]]></Code>
+								<Code><![CDATA[Human.Race.Green]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[Human.Strategy.Selfish]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -857,7 +1305,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554102610208</Id>
 					<Name><![CDATA[selfishBlue]]></Name>
-					<X>550</X><Y>-270</Y>
+					<X>390</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -878,19 +1326,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[Human.Race.Blue]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[Human.Strategy.Selfish]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -937,7 +1385,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554102625488</Id>
 					<Name><![CDATA[selfishOrange]]></Name>
-					<X>710</X><Y>-270</Y>
+					<X>550</X><Y>-240</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -958,19 +1406,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[4]]></Code>
+								<Code><![CDATA[Human.Race.Orange]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[Human.Strategy.Selfish]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1017,7 +1465,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554102712522</Id>
 					<Name><![CDATA[traitorousRed]]></Name>
-					<X>210</X><Y>-210</Y>
+					<X>50</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1038,19 +1486,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[Human.Race.Red]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[2]]></Code>
+								<Code><![CDATA[Human.Strategy.Traitor]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1097,7 +1545,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554102712537</Id>
 					<Name><![CDATA[traitorousGreen]]></Name>
-					<X>370</X><Y>-210</Y>
+					<X>210</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1118,19 +1566,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[2]]></Code>
+								<Code><![CDATA[Human.Race.Green]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[2]]></Code>
+								<Code><![CDATA[Human.Strategy.Traitor]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1177,7 +1625,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554102712551</Id>
 					<Name><![CDATA[traitorousBlue]]></Name>
-					<X>550</X><Y>-210</Y>
+					<X>390</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1198,19 +1646,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[Human.Race.Blue]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[2]]></Code>
+								<Code><![CDATA[Human.Strategy.Traitor]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1257,7 +1705,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554102712569</Id>
 					<Name><![CDATA[traitorousOrange]]></Name>
-					<X>710</X><Y>-210</Y>
+					<X>550</X><Y>-180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1278,19 +1726,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[4]]></Code>
+								<Code><![CDATA[Human.Race.Orange]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[2]]></Code>
+								<Code><![CDATA[Human.Strategy.Traitor]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1337,7 +1785,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554103939831</Id>
 					<Name><![CDATA[humanRed]]></Name>
-					<X>210</X><Y>-150</Y>
+					<X>50</X><Y>-120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1358,19 +1806,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[Human.Race.Red]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[Human.Strategy.Humanitarian]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1417,7 +1865,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554103939840</Id>
 					<Name><![CDATA[humanGreen]]></Name>
-					<X>370</X><Y>-150</Y>
+					<X>210</X><Y>-120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1438,19 +1886,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[2]]></Code>
+								<Code><![CDATA[Human.Race.Green]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[Human.Strategy.Humanitarian]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1497,7 +1945,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554103939849</Id>
 					<Name><![CDATA[humanBlue]]></Name>
-					<X>550</X><Y>-150</Y>
+					<X>390</X><Y>-120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1518,19 +1966,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[Human.Race.Blue]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[Human.Strategy.Humanitarian]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1577,7 +2025,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554103939868</Id>
 					<Name><![CDATA[humanOrange]]></Name>
-					<X>710</X><Y>-150</Y>
+					<X>550</X><Y>-120</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1598,19 +2046,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[4]]></Code>
+								<Code><![CDATA[Human.Race.Orange]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[Human.Strategy.Humanitarian]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1657,7 +2105,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554104073248</Id>
 					<Name><![CDATA[ethnoRed]]></Name>
-					<X>210</X><Y>-90</Y>
+					<X>50</X><Y>-60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1678,19 +2126,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[1]]></Code>
+								<Code><![CDATA[Human.Race.Red]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[4]]></Code>
+								<Code><![CDATA[Human.Strategy.Ethnocentric]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1737,7 +2185,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554104073256</Id>
 					<Name><![CDATA[ethnoGreen]]></Name>
-					<X>370</X><Y>-90</Y>
+					<X>210</X><Y>-60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1758,19 +2206,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[2]]></Code>
+								<Code><![CDATA[Human.Race.Green]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[4]]></Code>
+								<Code><![CDATA[Human.Strategy.Ethnocentric]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1817,7 +2265,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554104073274</Id>
 					<Name><![CDATA[ethnoBlue]]></Name>
-					<X>550</X><Y>-90</Y>
+					<X>390</X><Y>-60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1838,19 +2286,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[3]]></Code>
+								<Code><![CDATA[Human.Race.Blue]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[4]]></Code>
+								<Code><![CDATA[Human.Strategy.Ethnocentric]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1897,7 +2345,7 @@ switch (strategyChoice) {
 				<EmbeddedObject>
 					<Id>1554104073282</Id>
 					<Name><![CDATA[ethnoOrange]]></Name>
-					<X>710</X><Y>-90</Y>
+					<X>550</X><Y>-60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1918,19 +2366,19 @@ switch (strategyChoice) {
 						<Parameter>
 							<Name><![CDATA[race]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[4]]></Code>
+								<Code><![CDATA[Human.Race.Orange]]></Code>
 							</Value>
 						</Parameter>
 						<Parameter>
 							<Name><![CDATA[strategy]]></Name>
 							<Value Class="CodeValue">
-								<Code><![CDATA[4]]></Code>
+								<Code><![CDATA[Human.Strategy.Ethnocentric]]></Code>
 							</Value>
 						</Parameter>
 					</Parameters>
 					<ReplicationFlag>true</ReplicationFlag>
 					<Replication Class="CodeValue">
-						<Code><![CDATA[5]]></Code>
+						<Code><![CDATA[initialCount]]></Code>
 					</Replication>
 					<CollectionType>ARRAY_LIST_BASED</CollectionType>
 					<StatisticsItem>
@@ -1980,7 +2428,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554101537798</Id>
 					<Name><![CDATA[selfishRed_presentation]]></Name>
-					<X>200</X><Y>-300</Y>
+					<X>40</X><Y>-270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1999,7 +2447,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554102549981</Id>
 					<Name><![CDATA[selfishGreen_presentation]]></Name>
-					<X>360</X><Y>-300</Y>
+					<X>200</X><Y>-270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2018,7 +2466,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554102610200</Id>
 					<Name><![CDATA[selfishBlue_presentation]]></Name>
-					<X>540</X><Y>-300</Y>
+					<X>380</X><Y>-270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2037,7 +2485,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554102625477</Id>
 					<Name><![CDATA[selfishOrange_presentation]]></Name>
-					<X>700</X><Y>-300</Y>
+					<X>540</X><Y>-270</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2056,7 +2504,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554102712484</Id>
 					<Name><![CDATA[traitorousRed_presentation]]></Name>
-					<X>200</X><Y>-240</Y>
+					<X>40</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2075,7 +2523,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554102712514</Id>
 					<Name><![CDATA[traitorousGreen_presentation]]></Name>
-					<X>360</X><Y>-240</Y>
+					<X>200</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2094,7 +2542,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554102712516</Id>
 					<Name><![CDATA[traitorousBlue_presentation]]></Name>
-					<X>540</X><Y>-240</Y>
+					<X>380</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2113,7 +2561,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554102712518</Id>
 					<Name><![CDATA[traitorousOrange_presentation]]></Name>
-					<X>700</X><Y>-240</Y>
+					<X>540</X><Y>-210</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2156,7 +2604,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554103939813</Id>
 					<Name><![CDATA[humanRed_presentation]]></Name>
-					<X>200</X><Y>-180</Y>
+					<X>40</X><Y>-150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2175,7 +2623,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554103939820</Id>
 					<Name><![CDATA[humanGreen_presentation]]></Name>
-					<X>360</X><Y>-180</Y>
+					<X>200</X><Y>-150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2194,7 +2642,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554103939822</Id>
 					<Name><![CDATA[humanBlue_presentation]]></Name>
-					<X>540</X><Y>-180</Y>
+					<X>380</X><Y>-150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2213,7 +2661,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554103939826</Id>
 					<Name><![CDATA[humanOrange_presentation]]></Name>
-					<X>700</X><Y>-180</Y>
+					<X>540</X><Y>-150</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2232,7 +2680,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554104073233</Id>
 					<Name><![CDATA[ethnoRed_presentation]]></Name>
-					<X>200</X><Y>-120</Y>
+					<X>40</X><Y>-90</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2251,7 +2699,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554104073240</Id>
 					<Name><![CDATA[ethnoGreen_presentation]]></Name>
-					<X>360</X><Y>-120</Y>
+					<X>200</X><Y>-90</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2270,7 +2718,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554104073242</Id>
 					<Name><![CDATA[ethnoBlue_presentation]]></Name>
-					<X>540</X><Y>-120</Y>
+					<X>380</X><Y>-90</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2289,7 +2737,7 @@ switch (strategyChoice) {
 				<EmbeddedObjectPresentation>
 					<Id>1554104073244</Id>
 					<Name><![CDATA[ethnoOrange_presentation]]></Name>
-					<X>700</X><Y>-120</Y>
+					<X>540</X><Y>-90</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2317,7 +2765,7 @@ switch (strategyChoice) {
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-26624</Color>
+					<Color>-16777216</Color>
 					<Text><![CDATA[Ethnocentric]]></Text>
 					<Font>
 						<Name>Open Sans</Name>
@@ -2338,7 +2786,7 @@ switch (strategyChoice) {
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-12627531</Color>
+					<Color>-16777216</Color>
 					<Text><![CDATA[Humanitarian]]></Text>
 					<Font>
 						<Name>Open Sans</Name>
@@ -2359,7 +2807,7 @@ switch (strategyChoice) {
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-11751600</Color>
+					<Color>-16777216</Color>
 					<Text><![CDATA[Traitorous]]></Text>
 					<Font>
 						<Name>Open Sans</Name>
@@ -2380,7 +2828,7 @@ switch (strategyChoice) {
 					<EmbeddedIcon>false</EmbeddedIcon>
 					<Z>0</Z>
 					<Rotation>0.0</Rotation>
-					<Color>-769275</Color>
+					<Color>-16777216</Color>
 					<Text><![CDATA[Selfish]]></Text>
 					<Font>
 						<Name>Open Sans</Name>
@@ -2437,9 +2885,9 @@ switch (strategyChoice) {
 					<ShowLegend>false</ShowLegend>
 					<DataItem>
 					<Expression><![CDATA[ethnoRatio]]></Expression>
-					<Color>-26624</Color>
+					<Color>-4144960</Color>
 					<Expression2Flag>true</Expression2Flag>
-						<Title><![CDATA[Ethoncentrics]]></Title>
+						<Title><![CDATA[Ethnocentrics]]></Title>
 					</DataItem>
 					<ScaleFromExpression><![CDATA[0]]></ScaleFromExpression>
 					<ScaleToExpression><![CDATA[1]]></ScaleToExpression>
@@ -2495,7 +2943,7 @@ switch (strategyChoice) {
 					<ShowLegend>false</ShowLegend>
 					<DataItem>
 					<Expression><![CDATA[humanRatio]]></Expression>
-					<Color>-12627531</Color>
+					<Color>-4144960</Color>
 					<Expression2Flag>true</Expression2Flag>
 						<Title><![CDATA[item]]></Title>
 					</DataItem>
@@ -2553,7 +3001,7 @@ switch (strategyChoice) {
 					<ShowLegend>false</ShowLegend>
 					<DataItem>
 					<Expression><![CDATA[traitorousRatio]]></Expression>
-					<Color>-11751600</Color>
+					<Color>-4144960</Color>
 					<Expression2Flag>true</Expression2Flag>
 						<Title><![CDATA[item]]></Title>
 					</DataItem>
@@ -2611,7 +3059,7 @@ switch (strategyChoice) {
 					<ShowLegend>false</ShowLegend>
 					<DataItem>
 					<Expression><![CDATA[selfishRatio]]></Expression>
-					<Color>-769275</Color>
+					<Color>-4144960</Color>
 					<Expression2Flag>true</Expression2Flag>
 						<Title><![CDATA[item]]></Title>
 					</DataItem>
@@ -2630,6 +3078,8 @@ switch (strategyChoice) {
 		<ActiveObjectClass>
 			<Id>1554100643613</Id>
 			<Name><![CDATA[Human]]></Name>
+			<AdditionalClassCode><![CDATA[public enum Race { Red, Green, Blue, Orange }
+public enum Strategy { Ethnocentric, Humanitarian, Selfish, Traitor }]]></AdditionalClassCode>
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<Generic>false</Generic>
 			<GenericParameter>
@@ -2747,11 +3197,11 @@ switch (strategyChoice) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[int]]></Type>
+						<Type><![CDATA[Human.Race]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[Race.Red]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1554101141244</Id>
@@ -2771,11 +3221,11 @@ switch (strategyChoice) {
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties SaveInSnapshot="true" ModificatorType="STATIC">
-						<Type><![CDATA[int]]></Type>
+						<Type><![CDATA[Human.Strategy]]></Type>
 						<UnitType><![CDATA[NONE]]></UnitType>
 						<SdArray>false</SdArray>
 						<DefaultValue Class="CodeValue">
-							<Code><![CDATA[1]]></Code>
+							<Code><![CDATA[Strategy.Ethnocentric]]></Code>
 						</DefaultValue>
 						<ParameterEditor>
 							<Id>1554101177656</Id>
@@ -2823,7 +3273,7 @@ switch (strategyChoice) {
 					<ReturnType><![CDATA[List<Agent>]]></ReturnType>
 					<Id>1554101952196</Id>
 					<Name><![CDATA[getN]]></Name>
-					<X>20</X><Y>240</Y>
+					<X>20</X><Y>260</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2836,43 +3286,43 @@ switch (strategyChoice) {
 					<ReturnType><![CDATA[List<Agent>]]></ReturnType>
 					<Id>1554101956553</Id>
 					<Name><![CDATA[setup]]></Name>
-					<X>20</X><Y>270</Y>
+					<X>20</X><Y>290</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[switch (race) {
-case (1): // Red
+case Red: // Red
 representation.setFillColor(new Color(244, 67, 5));
 break;
 
-case (2): // Green
+case Green: // Green
 representation.setFillColor(new Color(76, 175, 80));
 break;
 
-case (3): // Blue
+case Blue: // Blue
 representation.setFillColor(new Color(63, 81, 181));
 break;
 
-case (4):
+case Orange:
 default: // Orange
 representation.setFillColor(new Color(255, 152, 0));
 }
 
 switch (strategy) {
-case (1): // Selfish
+case Selfish: // Selfish
 text.setText("S");
 break;
 
-case (2): // Traitorous
+case Traitor: // Traitorous
 text.setText("T");
 break;
 
-case (3): // Humanitarian
+case Humanitarian: // Humanitarian
 text.setText("H");
 break;
 
-case (4): // Ethnocentric
+case Ethnocentric: // Ethnocentric
 default:
 text.setText("E");
 }]]></Body>
