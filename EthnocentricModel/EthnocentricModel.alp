@@ -128,7 +128,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554739268268</Id>
 					<Name><![CDATA[ethnoRatio]]></Name>
-					<X>640</X><Y>80</Y>
+					<X>640</X><Y>60</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -143,7 +143,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554739729939</Id>
 					<Name><![CDATA[humanRatio]]></Name>
-					<X>640</X><Y>120</Y>
+					<X>640</X><Y>100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -158,7 +158,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554739737418</Id>
 					<Name><![CDATA[traitorousRatio]]></Name>
-					<X>640</X><Y>160</Y>
+					<X>640</X><Y>140</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -173,7 +173,7 @@
 				<Variable Class="PlainVariable">
 					<Id>1554739747813</Id>
 					<Name><![CDATA[selfishRatio]]></Name>
-					<X>640</X><Y>200</Y>
+					<X>640</X><Y>180</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -213,21 +213,6 @@
 					</Properties>
 				</Variable>
 				<Variable Class="PlainVariable">
-					<Id>1554742612296</Id>
-					<Name><![CDATA[mutateRate]]></Name>
-					<X>510</X><Y>690</Y>
-					<Label><X>10</X><Y>0</Y></Label>
-					<PublicFlag>false</PublicFlag>
-					<PresentationFlag>true</PresentationFlag>
-					<ShowLabel>true</ShowLabel>
-					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
-						<Type><![CDATA[double]]></Type>        
-						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0.005]]></Code>
-						</InitialValue>
-					</Properties>
-				</Variable>
-				<Variable Class="PlainVariable">
 					<Id>1554792978079</Id>
 					<Name><![CDATA[cooperateCooperate]]></Name>
 					<X>750</X><Y>940</Y>
@@ -238,7 +223,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0.02]]></Code>
+							<Code><![CDATA[0.01]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -253,7 +238,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[0.03]]></Code>
+							<Code><![CDATA[0.015]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -268,7 +253,7 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[double]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[-0.01]]></Code>
+							<Code><![CDATA[-0.005]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -298,7 +283,52 @@
 					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
 						<Type><![CDATA[int]]></Type>        
 						<InitialValue Class="CodeValue">
-							<Code><![CDATA[15]]></Code>
+							<Code><![CDATA[5]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1555862070852</Id>
+					<Name><![CDATA[mutateRate]]></Name>
+					<X>510</X><Y>690</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[double]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[0.005]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1555865463674</Id>
+					<Name><![CDATA[randomReproductionLocation]]></Name>
+					<X>640</X><Y>295</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
+						</InitialValue>
+					</Properties>
+				</Variable>
+				<Variable Class="PlainVariable">
+					<Id>1555865572823</Id>
+					<Name><![CDATA[randomImmigration]]></Name>
+					<X>640</X><Y>325</Y>
+					<Label><X>10</X><Y>0</Y></Label>
+					<PublicFlag>false</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>true</ShowLabel>
+					<Properties SaveInSnapshot="true" Constant="false" AccessType="public" StaticVariable="false">
+						<Type><![CDATA[boolean]]></Type>        
+						<InitialValue Class="CodeValue">
+							<Code><![CDATA[false]]></Code>
 						</InitialValue>
 					</Properties>
 				</Variable>
@@ -319,20 +349,17 @@
 				<StatechartElement Class="State" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738651630</Id>
 					<Name><![CDATA[immigration]]></Name>
-					<X>150</X><Y>550</Y>
+					<X>150</X><Y>770</Y>
 					<Label><X>45</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="200" Height="30">
-						<EntryAction><![CDATA[// Relocate all humans
-for (Agent agent: agents()) {
-	// If no more empty cell, end this phase
-	if (randomEmptyCell() == null) {
-		break;
-	}
-	
-	agent.jumpToRandomEmptyCell();
+						<EntryAction><![CDATA[// adds 1 single random agent
+addHuman();
+
+if (randomImmigration) {
+	applyLayout();
 }]]></EntryAction>
 						<FillColor/>
 					</Properties>
@@ -340,17 +367,23 @@ for (Agent agent: agents()) {
 				<StatechartElement Class="State" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738697251</Id>
 					<Name><![CDATA[interaction]]></Name>
-					<X>150</X><Y>620</Y>
+					<X>150</X><Y>550</Y>
 					<Label><X>55</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Properties Width="200" Height="30">
-						<EntryAction><![CDATA[for (Agent agent: agents()) {
+						<EntryAction><![CDATA[// To reset RP for all agents
+for (Agent agent: agents()) {
 	Human human = (Human)agent;
 	// Set human to have base reproduction rate
 	human.reproductionPoints = reproductionRate;
-	
+}
+
+// To do interactions
+for (Agent agent: agents()) {
+	Human human = (Human)agent;
+
 	// This human to interact with all neighbours
 	if (human.getNeighbors() != null) {
 		for (Agent neighbour : human.getNeighbors()) {
@@ -358,16 +391,14 @@ for (Agent agent: agents()) {
 			interact(human, otherHuman);
 		}
 	}
-}
-
-// To do interactions]]></EntryAction>
+}]]></EntryAction>
 						<FillColor/>
 					</Properties>
 				</StatechartElement>
 				<StatechartElement Class="State" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738711217</Id>
 					<Name><![CDATA[reproduction]]></Name>
-					<X>150</X><Y>700</Y>
+					<X>150</X><Y>630</Y>
 					<Label><X>45</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -392,29 +423,54 @@ for (Object object : objects) {
 	// Roll a dice to decide whether to reproduce
 	if (Math.random() < human.reproductionPoints) {
 		// If agent has an adjacent empty space, reproduce
-		if (human.getNeighbors() != null
-			&& human.getNeighbors().length < 4) {
+		Agent[] nArr = human.getNeighbors();
+		if (nArr == null || nArr.length < 4) {
+			int r = human.getR();
+			int c = human.getC();
+			
+			if (r > 0 && getAgentAtCell(r - 1, c) == null) {
+				r -= 1;
+			} else if (r + 1 < spaceRows()
+					&& getAgentAtCell(r + 1, c) == null) {
+				r += 1;
+			} else {
+				if (c > 0
+					&& getAgentAtCell(r, c - 1) == null) {
+					c -= 1;
+				} else if (c + 1 < spaceColumns()
+					&& getAgentAtCell(r, c + 1) == null) {
+					c += 1;
+				} else {
+					continue;
+				}
+			}
+			
+			Agent agent;
 			
 			// Roll a dice to decide whether to produce mutated offspring
 			if (Math.random() < mutateRate) {
-				addMutatedOffspring();
+				agent = addHuman();
 			} else {
 			// If no mutation, reproduce with offspring having same
 			// race and strategy
 				switch (human.strategy) {
 					case Selfish:
-						addSelfish(human.race);
+						agent = addSelfish(human.race);
 						break;
 					case Traitor:
-						addTraitorous(human.race);
+						agent = addTraitorous(human.race);
 						break;
 					case Humanitarian:
-						addHumanitarian(human.race);
+						agent = addHumanitarian(human.race);
 						break;
 					case Ethnocentric:
 					default:
-						addEthnocentric(human.race);
+						agent = addEthnocentric(human.race);
 				}
+			}
+			
+			if (randomReproductionLocation == false) {
+				agent.jumpToCell(r, c);
 			}
 		}
 	}
@@ -425,7 +481,7 @@ for (Object object : objects) {
 				<StatechartElement Class="State" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738728114</Id>
 					<Name><![CDATA[death]]></Name>
-					<X>150</X><Y>770</Y>
+					<X>150</X><Y>700</Y>
 					<Label><X>75</X><Y>15</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -473,13 +529,13 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>0</X><Y>30</Y></Point>
 					</Points>
-					<Properties Target="1554738651630">
+					<Properties Target="1554738697251">
 					</Properties>	
 				</StatechartElement>
 				<StatechartElement Class="Transition" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738755318</Id>
 					<Name><![CDATA[oneCycle]]></Name>
-					<X>350</X><Y>780</Y>
+					<X>350</X><Y>790</Y>
 					<Label><X>10</X><Y>30</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -487,11 +543,11 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					<Points>
 						<Point><X>0</X><Y>0</Y></Point>
 						<Point><X>50</X><Y>0</Y></Point>
-						<Point><X>50</X><Y>-210</Y></Point>
-						<Point><X>0</X><Y>-210</Y></Point>
+						<Point><X>50</X><Y>-220</Y></Point>
+						<Point><X>0</X><Y>-220</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1554738728114" Target="1554738651630" Trigger="timeout">
+					<Properties Source="1554738651630" Target="1554738697251" Trigger="timeout">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
@@ -511,7 +567,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 				<StatechartElement Class="Transition" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738801145</Id>
 					<Name><![CDATA[transition]]></Name>
-					<X>250</X><Y>580</Y>
+					<X>250</X><Y>730</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -521,7 +577,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 						<Point><X>0</X><Y>40</Y></Point>
 					</Points>
 					<IconOffset>20.0</IconOffset>
-					<Properties Source="1554738651630" Target="1554738697251" Trigger="condition">
+					<Properties Source="1554738728114" Target="1554738651630" Trigger="condition">
 						<Timeout Class="CodeUnitValue">
 							<Code><![CDATA[1]]></Code>
 							<Unit Class="TimeUnits"><![CDATA[YEAR]]></Unit>
@@ -541,7 +597,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 				<StatechartElement Class="Transition" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738810968</Id>
 					<Name><![CDATA[transition1]]></Name>
-					<X>250</X><Y>650</Y>
+					<X>250</X><Y>580</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -571,7 +627,7 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 				<StatechartElement Class="Transition" ParentState="state" ParentStateId="1554738605876">
 					<Id>1554738818671</Id>
 					<Name><![CDATA[transition2]]></Name>
-					<X>250</X><Y>730</Y>
+					<X>250</X><Y>660</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -601,11 +657,11 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 			</StatechartElements>
 			<Functions>
 				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[Agent]]></ReturnType>
 					<Id>1554741493149</Id>
 					<Name><![CDATA[addSelfish]]></Name>
-					<X>50</X><Y>940</Y>
+					<X>50</X><Y>990</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -616,26 +672,22 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					</Parameter>
 					<Body><![CDATA[switch (race) {
 	case Red:
-		add_selfishRed();
-		break;
+		return add_selfishRed();
 	case Green:
-		add_selfishGreen();
-		break;
+		return add_selfishGreen();
 	case Blue:
-		add_selfishBlue();
-		break;
+		return add_selfishBlue();
 	case Orange:
 	default:
-		add_selfishOrange();
-		break;
+		return add_selfishOrange();
 }]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[Agent]]></ReturnType>
 					<Id>1554741593193</Id>
 					<Name><![CDATA[addTraitorous]]></Name>
-					<X>50</X><Y>980</Y>
+					<X>50</X><Y>1030</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -646,26 +698,22 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					</Parameter>
 					<Body><![CDATA[switch (race) {
 	case Red:
-		add_traitorousRed();
-		break;
+		return add_traitorousRed();
 	case Green:
-		add_traitorousGreen();
-		break;
+		return add_traitorousGreen();
 	case Blue:
-		add_traitorousBlue();
-		break;
+		return add_traitorousBlue();
 	case Orange:
 	default:
-		add_traitorousOrange();
-		break;
+		return add_traitorousOrange();
 }]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[Agent]]></ReturnType>
 					<Id>1554741622804</Id>
 					<Name><![CDATA[addHumanitarian]]></Name>
-					<X>50</X><Y>1020</Y>
+					<X>50</X><Y>1070</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -676,26 +724,22 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					</Parameter>
 					<Body><![CDATA[switch (race) {
 	case Red:
-		add_humanRed();
-		break;
+		return add_humanRed();
 	case Green:
-		add_humanGreen();
-		break;
+		return add_humanGreen();
 	case Blue:
-		add_humanBlue();
-		break;
+		return add_humanBlue();
 	case Orange:
 	default:
-		add_humanOrange();
-		break;
+		return add_humanOrange();
 }]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[Agent]]></ReturnType>
 					<Id>1554741644624</Id>
 					<Name><![CDATA[addEthnocentric]]></Name>
-					<X>50</X><Y>1060</Y>
+					<X>50</X><Y>1110</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -706,47 +750,40 @@ selfishRatio = (selfishRed.c() + selfishGreen.c() + selfishBlue.c() + selfishOra
 					</Parameter>
 					<Body><![CDATA[switch (race) {
 	case Red:
-		add_ethnoRed();
-		break;
+		return add_ethnoRed();
 	case Green:
-		add_ethnoGreen();
-		break;
+		return add_ethnoGreen();
 	case Blue:
-		add_ethnoBlue();
-		break;
+		return add_ethnoBlue();
 	case Orange:
 	default:
-		add_ethnoOrange();
-		break;
+		return add_ethnoOrange();
 }]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
-					<ReturnModificator>VOID</ReturnModificator>
-					<ReturnType><![CDATA[double]]></ReturnType>
+					<ReturnModificator>RETURNS_VALUE</ReturnModificator>
+					<ReturnType><![CDATA[Agent]]></ReturnType>
 					<Id>1554742480232</Id>
-					<Name><![CDATA[addMutatedOffspring]]></Name>
-					<X>50</X><Y>900</Y>
+					<Name><![CDATA[addHuman]]></Name>
+					<X>50</X><Y>950</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
 					<ShowLabel>true</ShowLabel>
 					<Body><![CDATA[int strategyChoice = (int)(Math.random() * 4);
+
 Human.Race raceChoice =
 	Human.Race.values()[(int)(Math.random() * 4)];
 switch (strategyChoice) {
 	case 1:
-		addSelfish(raceChoice);
-		break;
+		return addSelfish(raceChoice);
 	case 2:
-		addTraitorous(raceChoice);
-		break;
+		return addTraitorous(raceChoice);
 	case 3:
-		addHumanitarian(raceChoice);
-		break;
+		return addHumanitarian(raceChoice);
 	case 4:
 	default:
-		addEthnocentric(raceChoice);
-		break;
+		return addEthnocentric(raceChoice);
 }]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
@@ -754,7 +791,7 @@ switch (strategyChoice) {
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554791183267</Id>
 					<Name><![CDATA[interact]]></Name>
-					<X>300</X><Y>900</Y>
+					<X>300</X><Y>940</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -788,7 +825,7 @@ switch (strategyChoice) {
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554794371659</Id>
 					<Name><![CDATA[interactAsSelfish]]></Name>
-					<X>300</X><Y>940</Y>
+					<X>300</X><Y>980</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -885,14 +922,14 @@ human.reproductionPoints += defectDefect;
 					<Body><![CDATA[// human defects
 // otherHuman cooperates
 human.reproductionPoints += defectCooperate;
-//otherHuman.reproductionPoints += cooperateDefect;]]></Body>
+otherHuman.reproductionPoints += cooperateDefect;]]></Body>
 				</Function>
 				<Function AccessType="default" StaticFunction="false">
 					<ReturnModificator>VOID</ReturnModificator>
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554795346117</Id>
 					<Name><![CDATA[interactAsTraitor]]></Name>
-					<X>300</X><Y>980</Y>
+					<X>300</X><Y>1020</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -987,7 +1024,7 @@ human.reproductionPoints += cooperateCooperate;
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554796027188</Id>
 					<Name><![CDATA[interactAsHumanitarian]]></Name>
-					<X>300</X><Y>1020</Y>
+					<X>300</X><Y>1060</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -1045,7 +1082,7 @@ switch (otherHuman.strategy) {
 					<ReturnType><![CDATA[double]]></ReturnType>
 					<Id>1554796402673</Id>
 					<Name><![CDATA[interactAsEthnocentric]]></Name>
-					<X>300</X><Y>1060</Y>
+					<X>300</X><Y>1100</Y>
 					<Label><X>10</X><Y>0</Y></Label>
 					<PublicFlag>false</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2777,7 +2814,7 @@ switch (otherHuman.strategy) {
 				<Text>
 					<Id>1554738033951</Id>
 					<Name><![CDATA[text1]]></Name>
-					<X>420</X><Y>110</Y>
+					<X>420</X><Y>100</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2798,7 +2835,7 @@ switch (otherHuman.strategy) {
 				<Text>
 					<Id>1554738087634</Id>
 					<Name><![CDATA[text2]]></Name>
-					<X>420</X><Y>200</Y>
+					<X>420</X><Y>180</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2819,7 +2856,7 @@ switch (otherHuman.strategy) {
 				<Text>
 					<Id>1554738087636</Id>
 					<Name><![CDATA[text3]]></Name>
-					<X>420</X><Y>290</Y>
+					<X>420</X><Y>260</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2838,11 +2875,55 @@ switch (otherHuman.strategy) {
 					<Alignment>LEFT</Alignment>
 				</Text>
 			</Shapes>
+			<Controls>
+				<Control Type="CheckBox">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1555865311337</Id>
+					<Name><![CDATA[randomLocationForReproduction]]></Name>
+					<X>415</X><Y>330</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="195" Height="30">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<TextColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Open Sans" Size="12" Style="0"/>
+						<LabelText><![CDATA[Random birth location]]></LabelText>
+						<LinkTo>true</LinkTo>
+						<Link>randomReproductionLocation</Link>
+	 				</ExtendedProperties>
+				</Control>
+				<Control Type="CheckBox">
+				 	<EmbeddedIcon>false</EmbeddedIcon>				
+					<Id>1555865548177</Id>
+					<Name><![CDATA[randomLocationForReproduction1]]></Name>
+					<X>415</X><Y>360</Y>
+					<Label><X>0</X><Y>-10</Y></Label>
+					<PublicFlag>true</PublicFlag>
+					<PresentationFlag>true</PresentationFlag>
+					<ShowLabel>false</ShowLabel>
+					<BasicProperties Width="195" Height="30">
+                        <EmbeddedIcon>false</EmbeddedIcon>	
+						<TextColor/>
+						<Enabled>true</Enabled>
+					</BasicProperties>
+					<ExtendedProperties>
+						<Font Name="Open Sans" Size="12" Style="0"/>
+						<LabelText><![CDATA[Random layout per round]]></LabelText>
+						<LinkTo>true</LinkTo>
+						<Link>randomImmigration</Link>
+	 				</ExtendedProperties>
+				</Control>
+			</Controls>
 			<Charts>
     			<BarChart>
 					<Id>1554737256716</Id>
 					<Name><![CDATA[chart]]></Name>
-					<X>410</X><Y>30</Y>
+					<X>410</X><Y>25</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2900,7 +2981,7 @@ switch (otherHuman.strategy) {
     			<BarChart>
 					<Id>1554738033956</Id>
 					<Name><![CDATA[chart1]]></Name>
-					<X>410</X><Y>120</Y>
+					<X>410</X><Y>105</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -2958,7 +3039,7 @@ switch (otherHuman.strategy) {
     			<BarChart>
 					<Id>1554738087640</Id>
 					<Name><![CDATA[chart2]]></Name>
-					<X>410</X><Y>210</Y>
+					<X>410</X><Y>185</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3016,7 +3097,7 @@ switch (otherHuman.strategy) {
     			<BarChart>
 					<Id>1554738087644</Id>
 					<Name><![CDATA[chart3]]></Name>
-					<X>410</X><Y>300</Y>
+					<X>410</X><Y>265</Y>
 					<Label><X>0</X><Y>-10</Y></Label>
 					<PublicFlag>true</PublicFlag>
 					<PresentationFlag>true</PresentationFlag>
@@ -3472,7 +3553,7 @@ text.setText("E");
 			<ClientAreaTopLeft><X>0</X><Y>0</Y></ClientAreaTopLeft>
 			<CommandLineArguments><![CDATA[]]></CommandLineArguments>
 			<MaximumMemory>512</MaximumMemory>
-			<RandomNumberGenerationType>fixedSeed</RandomNumberGenerationType>
+			<RandomNumberGenerationType>randomSeed</RandomNumberGenerationType>
 			<CustomGeneratorCode>new Random()</CustomGeneratorCode>
 			<SeedValue>1</SeedValue>
 			<SelectionModeForSimultaneousEvents>LIFO</SelectionModeForSimultaneousEvents>
